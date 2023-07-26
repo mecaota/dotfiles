@@ -1,1 +1,1 @@
-alias reload="source $HOME/.zshrc"
+abbr -S reload="source $HOME/.zshrc"
