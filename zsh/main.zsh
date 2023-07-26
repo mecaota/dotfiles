@@ -46,4 +46,5 @@ unsetopt AUTO_PUSHD
 plugins=(zsh-z `#git`)
 
 # エイリアス
-abbr -S reload="source $HOME/.zshrc"
+abbr -S reload='source $HOME/.zshrc'
+abbr -S ls='ls -F --color=auto'
