@@ -8,9 +8,11 @@ fi
 # 読み込み
 script_dir=$(cd $(dirname $0); pwd)
 source $script_dir/antigen/antigen.zsh
-source $script_dir/.p10k.zsh # ~/.p10k.zsh
 source "$(brew --prefix)/share/google-cloud-sdk/path.zsh.inc" # gcloud
 source "$(brew --prefix)/share/google-cloud-sdk/completion.zsh.inc" # gcloud
+
+# eval
+eval "$(anyenv init -)" # anyenv
 
 # antigen
 antigen use oh-my-zsh
@@ -22,6 +24,7 @@ antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-history-substring-search
 antigen bundle olets/zsh-abbr@v5.1.0
 antigen theme romkatv/powerlevel10k
+source $script_dir/.p10k.zsh # ~/.p10k.zsh
 antigen apply
 
 # 補完設定
