@@ -7,6 +7,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+# 読み込み
 source $script_dir/alias.zsh
 source $script_dir/antigen.zsh
 source $script_dir/.p10k.zsh # ~/.p10k.zsh
@@ -28,3 +29,7 @@ unsetopt AUTO_PUSHD
 
 # issue: https://github.com/romkatv/powerlevel10k/issues/1554
 plugins=(zsh-z `#git`)
+
+# gcp
+source "$(brew --prefix)/share/google-cloud-sdk/path.zsh.inc"
+source "$(brew --prefix)/share/google-cloud-sdk/completion.zsh.inc"
