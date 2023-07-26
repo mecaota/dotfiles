@@ -9,6 +9,7 @@ antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-history-substring-search
 antigen bundle olets/zsh-abbr@v5.1.0
+antigen theme romkatv/powerlevel10k
 
 antigen apply
 
