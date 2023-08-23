@@ -28,8 +28,10 @@ source $script_dir/.p10k.zsh # ~/.p10k.zsh
 antigen apply
 
 # 補完設定
+fpath=(/usr/local/share/zsh/site-functions $fpath)
 zstyle ':completion:*' menu yes select
 zstyle ':completion:*' recent-dirs-insert both
+zstyle ':completion:*:*:docker:*' option-stacking yes
 autoload -U compinit
 compinit
 
