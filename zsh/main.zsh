@@ -28,10 +28,10 @@ source $script_dir/.p10k.zsh # ~/.p10k.zsh
 antigen apply
 
 # 補完設定
-autoload -U compinit
-compinit
 zstyle ':completion:*' menu yes select
 zstyle ':completion:*' recent-dirs-insert both
+autoload -U compinit
+compinit
 
 # オプション
 setopt EXTENDED_GLOB
