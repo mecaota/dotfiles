@@ -32,6 +32,7 @@ fpath=(/usr/local/share/zsh/site-functions $fpath)
 zstyle ':completion:*' menu yes select
 zstyle ':completion:*' recent-dirs-insert both
 zstyle ':completion:*:*:docker:*' option-stacking yes
+zstyle ':completion:*:docker-compose:*' option-stacking yes
 autoload -U compinit
 compinit
 
