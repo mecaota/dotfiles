@@ -6,4 +6,4 @@ alias grep="$(brew --prefix grep)/libexec/gnubin/grep"
 export PHP_BUILD_CONFIGURE_OPTS="--with-bz2=$(brew --prefix bzip2) --with-iconv=$(brew --prefix libiconv) --with-tidy=$(brew --prefix tidy-html5) --with-jpeg=$(brew --prefix jpeg-turbo)"
 
 # Rover cli
-export PATH="$HOME/.rover/bin"
+export PATH="$HOME/.rover/bin:$PATH"
