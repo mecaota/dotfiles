@@ -1,4 +1,3 @@
-tap "homebrew/bundle"
 brew "anyenv"
 brew "giflib"
 brew "jpeg-turbo"
