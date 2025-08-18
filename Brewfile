@@ -1,7 +1,5 @@
 brew "anyenv"
-brew "giflib"
-brew "jpeg-turbo"
-brew "libpng"
+brew "ffmpeg"
 brew "autoconf"
 brew "awscli"
 brew "docker-credential-helper-ecr"
