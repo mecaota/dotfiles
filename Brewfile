@@ -1,3 +1,4 @@
+brew "nano"
 brew "anyenv"
 brew "ffmpeg"
 brew "autoconf"
