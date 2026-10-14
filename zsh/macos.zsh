@@ -1,9 +1,7 @@
 # macのgrepをGNU grepにする
-export PATH="$(brew --prefix grep)/libexec/gnubin:$PATH"
 alias grep="$(brew --prefix grep)/libexec/gnubin/grep"
 
 # macのgitをbrew経由のgitにする
-export PATH="$(brew --prefix git)/bin/git:$PATH"
 alias git="$(brew --prefix git)/bin/git"
 
 # Rover cli
