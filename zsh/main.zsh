@@ -36,6 +36,12 @@ zstyle ':completion:*:docker-compose:*' option-stacking yes
 autoload -U compinit
 compinit
 
+# git補完設定
+export GIT_COMPLETION_CHECKOUT_NO_GUESS=1
+export GIT_COMPLETION_IGNORE_CASE=1
+export GIT_COMPLETION_SHOW_ALL=1
+export GIT_COMPLETION_SHOW_ALL_COMMANDS=1
+
 # オプション
 setopt EXTENDED_GLOB
 setopt BARE_GLOB_QUAL
